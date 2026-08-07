@@ -1,0 +1,38 @@
+{
+  "name": "pi-websearch",
+  "version": "0.1.0",
+  "description": "Web search tools for pi backed by a self-hosted SearXNG instance.",
+  "type": "module",
+  "private": false,
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "extensions",
+    "web",
+    "search",
+    "searxng"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/websearch.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "*"
+  },
+  "devDependencies": {
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "*",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.0.0"
+  }
+}
